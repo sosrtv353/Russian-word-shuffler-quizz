@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russian word shuffler</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="panel">
+            <div style="display: flex; justify-content: flex-end;">
+                <span class="material-icons" style="margin-right: 0.5rem; color: red; cursor: pointer;" id="closer">close</span>
+            </div>
+            <div class="h">
+                <h2>Settings</h2>
+            </div>
+            <div class="h">
+                <button id="mode-button">Turn on dark mode</button>
+            </div>
+            <div class="h">
+                <button id="music-button">Turn on some music</button>
+            </div>
+        </div>
+        <div id="setting-div">
+            <span class="material-icons" id="cog">settings</span>
+        </div>
+        <div id="header-title">
+            <h1>Welcome to russian word shuffler!</h1>
+        </div>
+    </header>
+    <br><br>
+    <main>
+        <form>
+            <div id="inputs">
+                <label for="geo-input">Enter a georgian word</label>
+                <br>
+                <input type="text" id="geo-input" required>
+                <br>
+                <label for="russ-input">Enter its meaning in russian</label>
+                <br>
+                <input type="text" id="russ-input" required>
+                <br>
+                <input type="submit" id="submiter">
+            </div>
+            
+        </form>
+
+        <section id="main-box">
+            <div id="georgian-words" class="box">
+                <div class="h">
+                    <h2>Georgian words</h2>
+                </div>
+            </div>
+            <div id="russian-words" class="box">
+                <div class="h">
+                    <h2>Translated to russian</h2>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <div id="shuffle-div">
+            <button id="shuffler">Start quizz</button>
+            <div id="result"></div>
+        </div>
+
+        <div id="shuffled-questions">
+            <form id="shuffled-form"></form>
+        </div>
+    </main>
+    <footer>
+        <p>Thanks for visiting ❤️</p>
+        <p>Website made by: soso rtveliashvili</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
